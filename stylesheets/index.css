@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head-container {
+  background: linear-gradient(#6100FF, #151517);
+  position: relative;
+}
+.head-container > img {
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.head-container > p {
+  margin-top: 120px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: white 1px;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 45px;
+}
+.menu img {
+  height: 70px;
+}
+.menu button {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+}
+.menu button:hover {
+  background: rgba(255, 255, 255, 0.393);
+}
+.menu button:active {
+  background: rgba(255, 255, 255, 0.652);
+}
+@media screen and (min-width: 1920px) {
+  .menu {
+    width: 1920px;
+    margin: auto;
+  }
+  .menu img {
+    height: 150px;
+  }
+}
+
+.etti-bigtext {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: Oswald;
+  font-size: 12rem;
+  margin-top: 50px;
+}
+.etti-bigtext span:nth-child(1) {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.etti-bigtext span:nth-child(2) {
+  color: #24FF00;
+  position: absolute;
+  transform: translate(8px, 0);
+}
+
+.about-us {
+  background: #151517;
+  font-family: Oswald;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us > p {
+  color: #3200F8;
+  margin: 50px 10px;
+  font-size: 4rem;
+}
+.about-us > div {
+  position: relative;
+  width: 90%;
+}
+.about-us > div img {
+  height: 20px;
+  top: -18px;
+  left: 20px;
+  position: absolute;
+}
+.about-us > div img:nth-child(2) {
+  left: 110px;
+}
+
+.card-text {
+  position: relative;
+  background: white;
+  word-break: break-word;
+  padding: 30px 10px 30px 15px;
+}
+.card-text p {
+  font-size: 1rem;
+}
+.card-text p:nth-child(odd) {
+  color: #3200F8;
+}
+.card-text p:nth-child(2) {
+  padding-bottom: 2rem;
+}
+
+.first-card {
+  margin-bottom: 50px;
+}
+.first-card > p {
+  display: none;
+}
+
+.second-card {
+  border: 2px solid black;
+}
+
+@media (min-width: 640px) {
+  .menu img {
+    height: 90px;
+  }
+  .about-us > p {
+    font-size: 5rem;
+  }
+  .about-us > div {
+    width: fit-content;
+  }
+  .card-text {
+    padding: 31px 54px 41px 21px;
+  }
+  .card-text p {
+    font-size: 1.5rem;
+  }
+  .head-container > p {
+    font-size: 4rem;
+  }
+  .etti-bigtext {
+    font-size: 16rem;
+  }
+}
+@media (min-width: 1024px) {
+  .menu img {
+    height: 100px;
+  }
+  .about-us > p {
+    font-size: 6rem;
+  }
+  .about-us > div {
+    width: fit-content;
+  }
+  .first-card {
+    right: 200px;
+  }
+  .second-card {
+    left: 220px;
+    bottom: 200px;
+  }
+  .card-text {
+    padding: 31px 54px 41px 21px;
+  }
+  .card-text p {
+    font-size: 1.2rem;
+  }
+  .head-container > p {
+    font-size: 4rem;
+  }
+  .etti-bigtext {
+    font-size: 18rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
